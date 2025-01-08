@@ -1,0 +1,90 @@
+.microsoft {
+    border: none;
+    background: transparent;
+    position: relative;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 210px;
+    transition: all 0.3s;
+
+}
+
+.microsoft.animate {
+    transform: scale(1.06);
+    .microsoft_line__first,
+    .microsoft_line__second{
+        padding: 0;
+    }
+}
+
+.microsoft_line {
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.microsoft_line__first {
+    border-color: #1A1A1A;
+}
+
+.microsoft_line__second {
+    border-color: #2E2E2E;
+}
+
+.microsoft_line__third {
+    border-color: #FFFFFF;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.microsoft_logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 66px;
+    height: 100%;
+}
+
+.microsoft_logoBlock {
+    width: 32px;
+    height: 32px;
+}
+
+.microsoft_logoBlock__red {
+    background: #F25022;
+}
+
+.microsoft_logoBlock__green {
+    background: #7FBA00;
+}
+
+.microsoft_logoBlock__blue {
+    background: #00A4EF;
+}
+
+.microsoft_logoBlock__orange {
+    background: #FFB900;
+}
+
+.microsoft_text {
+    color: #FFFFFF;
+    font-weight: 500;
+    max-width: 130px;
+    text-align: start;
+    line-height: 1;
+    margin-left: 19px;
+}
+
+.microsoft_textTop {
+    font-size: 17px;
+}
+
+.microsoft_textBottom {
+    font-size: 24px;
+}

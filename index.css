@@ -1,0 +1,46 @@
+body {
+    font-family: "Inter", serif;
+    background: #000;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Play", serif;
+    max-width: 1120px;
+    line-height: 64px;
+}
+
+.title span {
+    background: linear-gradient(to right, #B4B5F4, #7678EB);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient {
+    width: 120%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(72, 61, 139, 0.8) 0%, rgba(0, 0, 0, 1) 70%);
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    right: -40%;
+    overflow: hidden;
+}
+
+.gradient::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./assets/noise.svg'); /* шум в формате Base64 */
+    mix-blend-mode: overlay;
+    opacity: 0.4; /* регулировка уровня шума */
+    pointer-events: none;
+}
